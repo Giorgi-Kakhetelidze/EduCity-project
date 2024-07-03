@@ -1,0 +1,125 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+@layer components {
+  .btn-primary {
+    @apply bg-black text-white h-[60px] w-[200px] 
+    font-noto-georgian rounded-xl bg-[#070779]
+    cursor-pointer transition-all
+    hover:bg-[#0b0bb5] 
+
+    hover:bg-blue-600 text-white 
+      font-bold py-2 px-4 rounded-full transition duration-300
+      transform hover:scale-105 animate-pulse
+      
+  }
+
+  .header-text {
+    @apply text-[#e3b314] text-5xl font-semibold 
+    font-noto-georgian
+  }
+  
+
+}
+
+
+
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+}
+.animate-pulse {
+  animation: pulse 2s infinite;
+}
+.animate-pulse2 {
+  animation: pulse 4s infinite;
+}
+
+
+
+@import "./compStyles/nav";
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+
+.slick-arrow {
+  margin-top: 50px;
+  height: 100px;
+  @apply mx-[50%]
+}
+
+.slick-slide {
+  margin: 0 25px;
+}
+
+.border {
+  height: 450px;
+}
+
+
+.footer {
+  background-image: url("../assets/Imgs/background.png");
+  color: white;
+  padding: 50px 0;
+  text-align: center;
+  width: 100%;
+  height: 800px; /* Ensure this matches the height in the JSX */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  overflow: auto;
+}
+
+li {
+  list-style: none;
+
+  a {
+    position: relative;
+    letter-spacing: 0.5px;
+    text-decoration: none;
+    color: black;
+    font-family: "Lato", sans-serif;
+    padding: 0 10px;
+    cursor: pointer;
+
+  }
+  a:after {
+    content: "";
+    position: absolute;
+    background-color: rgb(255, 174, 0);
+    width: 0;
+    height: 3px;
+    left: 5px;
+    bottom: -10px;
+    transition: 0.5s;
+  }
+  a:hover{
+    color: rgb(255, 174, 0);
+    transition: 0.5s;
+  }
+  a:hover:after {
+    width: 95%;
+    color: yellow ;
+  }
+}
+
+.btn {
+  background-image: linear-gradient(90deg, #160e3d, #181845, #1a224d, #1e2c54, #23355b, #283c62, #2e4468, #344b6f, #3b5278, #415981, #48608a, #4f6793);
+}
+
+.btn-primary {
+  background-image: linear-gradient(90deg, #160e3d, #181845, #1a224d, #1e2c54, #23355b, #283c62, #2e4468, #344b6f, #3b5278, #415981, #48608a, #4f6793);
+}
