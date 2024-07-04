@@ -18,11 +18,11 @@ function Footer() {
 
       <img
         src={background}
-        className="absolute bottom-0 w-full z-[0] h-[400px] max-2xl:h-[70vh] max-lg:top-[60vh]"
+        className="absolute bottom-0 w-full z-[0] h-[450px] max-2xl:h-[70vh] max-lg:top-[100vh] "
       />
 
-      <div className="absolute flex flex-wrap bottom-0 z-30 w-full justify-start max-lg:text-center
-      max-lg:left-0 left-40 max-lg:justify-center gap-[14%] max-lg:top-[80vh]">
+      <div className="absolute flex flex-wrap bottom-0 z-30 w-[90%] justify-start max-lg:text-center
+      max-lg:left-0 left-40 max-lg:justify-center gap-[14%] max-lg:top-[80vh] ">
         <div> 
           <h2 className="font-bold text-3xl">გვერდები</h2>
           <ul className="flex flex-col gap-11 h-[160px] my-10 w-[200px]
